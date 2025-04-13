@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Text-to-Image Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="darkModeToggle">🌙</button>
+    <div class="container">
+        <h1>✨ AI Text-to-Image Converter ✨</h1>
+        
+        <div class="input">
+            <label for="input">Create an image from text prompt:</label> 
+            <input type="text" id="input" placeholder="Enter a prompt to generate an image">
+            <button id="btn">🎨 Generate Image</button>
+        </div>
+
+        <div class="output">
+            <div class="image"> 
+                <img id="image" src="" alt="Generated Image">
+                <img id="loading" src="loading.gif" alt="Loading..." class="hidden">
+            </div>
+        </div>
+
+        <div class="btns">
+            <button id="download" class="hidden">📥 Download</button>
+            <button id="reset" class="hidden">🔄 Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
